@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Registration Successful";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.Message != null)
+{
+    <p class="alert alert-success">@ViewBag.Message</p>
+}
+else
+{
+    <p>Your registration was successful. Please check your email for a welcome message.</p>
+}
+
+<p>
+    You can now <a asp-controller="Account" asp-action="Login">log in</a>.
+</p>
